@@ -12,9 +12,8 @@ using System.Collections.Generic;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ProductsController : ControllerBase
+    
+    public class ProductsController : BaseApiController
     {
         private readonly IProductRepository _repo;
         public ProductsController(IProductRepository repo)
